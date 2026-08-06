@@ -28,7 +28,9 @@ func main() {
 	reader := bufio.NewReaderSize(os.Stdin, 1<<20)
 
 	answer := rand.Intn(100) + 1
-
+	s := "ma"
+	fmt.Printf("%T \n", s[1])
+	fmt.Println('b' - 'B')
 	for {
 		guess := readInt(reader)
 
